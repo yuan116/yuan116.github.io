@@ -61,7 +61,7 @@ export default defineConfig((env) => {
                         const nodeModulesIndex = id.lastIndexOf('node_modules');
 
                         if (nodeModulesIndex !== -1) {
-                            const moduleName = id.substring(nodeModulesIndex).split('/')[1];
+                            const moduleName = id.substring(nodeModulesIndex).split(path.sep)[1];
 
                             return 'vendor-' + moduleName;
                         }

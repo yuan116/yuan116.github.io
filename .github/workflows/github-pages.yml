@@ -30,7 +30,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with: 
+        with:
           submodules: true
 
       # - name: Setup Pages
@@ -40,14 +40,13 @@ jobs:
         with:
           version: 8
 
-      - name: Show Directory
-        run: ls -la
-
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
+
+      - run: cp .env.example .env
 
       - name: Install Node Dependecies with PNPM
         run: pnpm install
