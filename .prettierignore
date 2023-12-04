@@ -1,0 +1,7 @@
+# PNPM
+pnpm-lock.yaml
+
+# Application
+/vite-plugins
+/www
+stats.html

@@ -1,0 +1,27 @@
+$background-color: 'black' !default;
+$background-opacity-default: theme('backgroundOpacity.0') !default;
+$blur-default: theme('backdropBlur.0') !default;
+
+$background-opacity: theme('backdropOpacity.50') !default;
+$blur: theme('backdropBlur.sm') !default;
+$blur-background-opacity: theme('backgroundOpacity.30') !default;
+
+$z-index: 1030 !default;
+
+.app-backdrop {
+    --backdrop-background-opacity: #{$background-opacity-default};
+    --backdrop-blur: #{$blur-default};
+    @apply bg-#{$background-color} z-[#{$z-index}] fixed bottom-0 left-0 right-0 top-0 bg-opacity-[var(--backdrop-background-opacity)] backdrop-blur-[var(--backdrop-blur)] transition-opacity;
+
+    &-blur {
+        --backdrop-blur: #{$blur};
+    }
+
+    &-opacity {
+        --backdrop-background-opacity: #{$background-opacity};
+
+        &.app-backdrop-blur {
+            --backdrop-background-opacity: #{$blur-background-opacity};
+        }
+    }
+}

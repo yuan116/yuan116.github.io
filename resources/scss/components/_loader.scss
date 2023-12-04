@@ -1,0 +1,17 @@
+$height: theme('height.8') !default;
+$width: theme('width.8') !default;
+
+$color-spinner: 'black' !default;
+$color-ping: 'black' !default;
+
+.app-loader {
+    @apply h-[#{$height}] w-[#{$width}] rounded-full;
+
+    &-spinner {
+        @apply text-#{$color-spinner} animate-spin;
+    }
+
+    &-ping {
+        @apply bg-#{$color-ping} animate-ping;
+    }
+}

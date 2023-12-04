@@ -1,0 +1,3 @@
+[submodule "vite-plugins"]
+	path = vite-plugins
+	url = https://gitlab.com/yuan116/vite-plugins.git

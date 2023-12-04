@@ -1,0 +1,76 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    # Set default referrer policy header
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Ensure files served correct mime-type
+    Header set X-Content-Type-Options "nosniff"
+
+    # Only allow page rendering on same origin
+    Header set X-Frame-Options "SAMEORIGIN"
+
+    # Enable X-XSS-Protection for prevent XSS attack
+    Header set X-XSS-Protection "1; mode=block"
+
+    RewriteEngine On
+
+    # Disabled server request TRACE/TRACK method
+    RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+    RewriteRule .* - [F]
+
+    # Send Requests To index.html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.html [L]
+
+    # Disable server signature
+    ServerSignature Off
+</IfModule>
+
+# Client download file by brotli
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS
+        text/css
+        text/html
+        text/plain
+        text/xml
+        text/x-component
+        application/atom+xml
+        application/javascript
+        application/json
+        application/rss+xml
+        application/vnd.ms-fontobject
+        application/xhtml+xml
+        application/xml
+        application/x-font-ttf
+        application/x-javascript
+        application/x-web-app-manifest+json
+        font/opentype
+        image/svg+xml
+        image/x-icon
+</IfModule>
+
+# Client download file by gzip
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE
+        text/css
+        text/html
+        text/plain
+        text/xml
+        text/x-component
+        application/atom+xml
+        application/javascript
+        application/json
+        application/rss+xml
+        application/vnd.ms-fontobject
+        application/xhtml+xml
+        application/xml
+        application/x-font-ttf
+        application/x-javascript
+        application/x-web-app-manifest+json
+        font/opentype
+        image/svg+xml
+        image/x-icon
+</IfModule>
