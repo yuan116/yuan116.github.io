@@ -30,6 +30,10 @@ jobs:
         with:
           submodules: true
 
+      - uses: actions/configure-pages@v3
+        with:
+          enablement: true
+
       - uses: pnpm/action-setup@v2
         with:
           version: 8

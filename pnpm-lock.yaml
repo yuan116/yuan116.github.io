@@ -66,7 +66,7 @@ devDependencies:
     version: 1.0.7
   '@vitejs/plugin-react':
     specifier: ^4.2.0
-    version: 4.2.0(vite@5.0.4)
+    version: 4.2.0(vite@5.0.5)
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.32)
@@ -104,17 +104,17 @@ devDependencies:
     specifier: ^0.13.0
     version: 0.13.0(rollup@4.6.1)
   rollup-plugin-visualizer:
-    specifier: ^5.9.3
-    version: 5.9.3(rollup@4.6.1)
+    specifier: ^5.10.0
+    version: 5.10.0(rollup@4.6.1)
   sass:
     specifier: ^1.69.5
     version: 1.69.5
   vite:
-    specifier: ^5.0.4
-    version: 5.0.4(sass@1.69.5)
+    specifier: ^5.0.5
+    version: 5.0.5(sass@1.69.5)
   vite-plugin-inspect:
     specifier: ^0.8.1
-    version: 0.8.1(rollup@4.6.1)(vite@5.0.4)
+    version: 0.8.1(rollup@4.6.1)(vite@5.0.5)
 
 packages:
 
@@ -908,7 +908,7 @@ packages:
     resolution: {integrity: sha512-IRgwSzFEy2Er1C2fKAHWmeWN2DTif4Uqrn0FXyLyCNRODKQWzxiCc1FlQe3yVn3qLl/XmYXsPIYQCT1mfpONDg==}
     dev: true
 
-  /@vitejs/plugin-react@4.2.0(vite@5.0.4):
+  /@vitejs/plugin-react@4.2.0(vite@5.0.5):
     resolution: {integrity: sha512-+MHTH/e6H12kRp5HUkzOGqPMksezRMmW+TNzlh/QXfI8rRf6l2Z2yH/v12no1UvTwhZgEDMuQ7g7rrfMseU6FQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -919,7 +919,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.23.3(@babel/core@7.23.5)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 5.0.4(sass@1.69.5)
+      vite: 5.0.5(sass@1.69.5)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -966,7 +966,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.22.2
-      caniuse-lite: 1.0.30001565
+      caniuse-lite: 1.0.30001566
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1016,7 +1016,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001565
+      caniuse-lite: 1.0.30001566
       electron-to-chromium: 1.4.601
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
@@ -1039,8 +1039,8 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  /caniuse-lite@1.0.30001565:
-    resolution: {integrity: sha512-xrE//a3O7TP0vaJ8ikzkD2c2NgcVUvsEe2IvFTntV4Yd1Z9FVzh+gW+enX96L0psrbaFMcVcH2l90xNuGDWc8w==}
+  /caniuse-lite@1.0.30001566:
+    resolution: {integrity: sha512-ggIhCsTxmITBAMmK8yZjEhCO5/47jKXPu6Dha/wuCS4JePVL+3uiDEBuhu2aIoT+bqTOR8L76Ip1ARL9xYsEJA==}
     dev: true
 
   /chalk@2.4.2:
@@ -2277,8 +2277,8 @@ packages:
       rollup: 4.6.1
     dev: true
 
-  /rollup-plugin-visualizer@5.9.3(rollup@4.6.1):
-    resolution: {integrity: sha512-ieGM5UAbMVqThX67GCuFHu/GkaSXIUZwFKJsSzE+7+k9fibU/6gbUz7SL+9BBzNtv5bIFHj7kEu0TWcqEnT/sQ==}
+  /rollup-plugin-visualizer@5.10.0(rollup@4.6.1):
+    resolution: {integrity: sha512-N4AkNL0qFvipegbDJ0kupS+8eKGjL0q+lYwV46NflLX/B8Rh73wz3kCIdg50bR6XVhNcaMA4Eb519xtm90Ckfg==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
@@ -2572,7 +2572,7 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: false
 
-  /vite-plugin-inspect@0.8.1(rollup@4.6.1)(vite@5.0.4):
+  /vite-plugin-inspect@0.8.1(rollup@4.6.1)(vite@5.0.5):
     resolution: {integrity: sha512-oPBPVGp6tBd5KdY/qY6lrbLXqrbHRG0hZLvEaJfiZ/GQfDB+szRuLHblQh1oi1Hhh8GeLit/50l4xfs2SA+TCA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2590,14 +2590,14 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       sirv: 2.0.3
-      vite: 5.0.4(sass@1.69.5)
+      vite: 5.0.5(sass@1.69.5)
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
 
-  /vite@5.0.4(sass@1.69.5):
-    resolution: {integrity: sha512-RzAr8LSvM8lmhB4tQ5OPcBhpjOZRZjuxv9zO5UcxeoY2bd3kP3Ticd40Qma9/BqZ8JS96Ll/jeBX9u+LJZrhVg==}
+  /vite@5.0.5(sass@1.69.5):
+    resolution: {integrity: sha512-OekeWqR9Ls56f3zd4CaxzbbS11gqYkEiBtnWFFgYR2WV8oPJRRKq0mpskYy/XaoCL3L7VINDhqqOMNDiYdGvGg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
