@@ -34,19 +34,6 @@ jobs:
         with:
           version: 8
 
-      - name: Set PNPM Store Directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      # - uses: actions/cache@v3
-      #   name: Setup PNPM Cache
-      #   with:
-      #     path: ${{ env.STORE_PATH }}
-      #     key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-pnpm-store-
-
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
