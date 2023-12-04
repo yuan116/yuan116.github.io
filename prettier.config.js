@@ -17,6 +17,14 @@ export default {
     endOfLine: 'lf',
     htmlWhitespaceSensitivity: 'css',
     jsxSingleQuote: true,
+    overrides: [
+        {
+            files: ['*.yml', '*.yaml'],
+            options: {
+                tabWidth: 2,
+            },
+        },
+    ],
     // prettier-plugin-organize-imports and prettier-plugin-jsdoc bugs on plugins ordering
     plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-jsdoc', 'prettier-plugin-packagejson', 'prettier-plugin-tailwindcss'],
     printWidth: 160,
